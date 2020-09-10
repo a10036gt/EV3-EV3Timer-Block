@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EditorDefinitions>
+	<PolyGroups ModuleName="OFDL Timer" ModuleVersion="1.1 (By OFDL Dev.)">
+		<PolyGroup Name="OFDL Timer" BlockFamily="DataOperations">
+			<Parameter Name="i" CompilerDirectives="WaitForIteration" DataType="Int32" Direction="Input" DefaultValue="0"/>
+			<Parameter Name="Timer Value" Identification="builtin://Identification_Time.png" DataType="Single" Direction="Output"/>
+			<Parameter Name="Comparison" Direction="Input" Configuration="builtin://Identification_ComparisonType.xml" Identification="builtin://Identification_ComparisonType.xml" DataType="Int32" DefaultValue="2"/>
+			<Parameter Name="Threshold" Identification="builtin://Identification_Threshold_Timer.xml" DataType="Single" Direction="Input" DefaultValue="1" MinValue="0"/>
+			<Parameter Name="Amount" Identification="builtin://Identification_Numeric.png" DataType="Single" Direction="Input" DefaultValue="1"/>
+			<Parameter Name="Result" CompilerDirectives="Result" Identification="builtin://Identification_CompareResult.png" DataType="Boolean" Direction="Output"/>
+			<Block>
+				<Mode>MeasureOFDLTimer1</Mode>
+				<Reference Type="VILib" Name="MeasureOFDLTimer1.vix"/>
+				<BlockInterface>Measure</BlockInterface>
+				<ParameterReference Name="Timer Value"/>
+				<PaletteInfo Weight="0.5"/>
+			</Block>
+			<Block>
+				<Mode>MeasureOFDLTimer2</Mode>
+				<Reference Type="VILib" Name="MeasureOFDLTimer2.vix"/>
+				<BlockInterface>Measure</BlockInterface>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>MeasureOFDLTimer3</Mode>
+				<Reference Type="VILib" Name="MeasureOFDLTimer3.vix"/>
+				<BlockInterface>Measure</BlockInterface>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>MeasureOFDLTimer4</Mode>
+				<Reference Type="VILib" Name="MeasureOFDLTimer4.vix"/>
+				<BlockInterface>Measure</BlockInterface>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>MeasureOFDLTimer5</Mode>
+				<Reference Type="VILib" Name="MeasureOFDLTimer5.vix"/>
+				<BlockInterface>Measure</BlockInterface>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>MeasureOFDLTimer6</Mode>
+				<Reference Type="VILib" Name="MeasureOFDLTimer6.vix"/>
+				<BlockInterface>Measure</BlockInterface>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>MeasureOFDLTimer7</Mode>
+				<Reference Type="VILib" Name="MeasureOFDLTimer7.vix"/>
+				<BlockInterface>Measure</BlockInterface>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>MeasureOFDLTimer8</Mode>
+				<Reference Type="VILib" Name="MeasureOFDLTimer8.vix"/>
+				<BlockInterface>Measure</BlockInterface>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>CompareOFDLTimer1</Mode>
+				<Reference Type="VILib" Name="CompareOFDLTimer1.vix"/>
+				<BlockInterface>Compare</BlockInterface>
+				<ParameterReference Name="Comparison"/>
+				<ParameterReference Name="Threshold"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>CompareOFDLTimer2</Mode>
+				<Reference Type="VILib" Name="CompareOFDLTimer2.vix"/>
+				<BlockInterface>Compare</BlockInterface>
+				<ParameterReference Name="Comparison"/>
+				<ParameterReference Name="Threshold"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>CompareOFDLTimer3</Mode>
+				<Reference Type="VILib" Name="CompareOFDLTimer3.vix"/>
+				<BlockInterface>Compare</BlockInterface>
+				<ParameterReference Name="Comparison"/>
+				<ParameterReference Name="Threshold"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>CompareOFDLTimer4</Mode>
+				<Reference Type="VILib" Name="CompareOFDLTimer4.vix"/>
+				<BlockInterface>Compare</BlockInterface>
+				<ParameterReference Name="Comparison"/>
+				<ParameterReference Name="Threshold"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>CompareOFDLTimer5</Mode>
+				<Reference Type="VILib" Name="CompareOFDLTimer5.vix"/>
+				<BlockInterface>Compare</BlockInterface>
+				<ParameterReference Name="Comparison"/>
+				<ParameterReference Name="Threshold"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>CompareOFDLTimer6</Mode>
+				<Reference Type="VILib" Name="CompareOFDLTimer6.vix"/>
+				<BlockInterface>Compare</BlockInterface>
+				<ParameterReference Name="Comparison"/>
+				<ParameterReference Name="Threshold"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>CompareOFDLTimer7</Mode>
+				<Reference Type="VILib" Name="CompareOFDLTimer7.vix"/>
+				<BlockInterface>Compare</BlockInterface>
+				<ParameterReference Name="Comparison"/>
+				<ParameterReference Name="Threshold"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>CompareOFDLTimer8</Mode>
+				<Reference Type="VILib" Name="CompareOFDLTimer8.vix"/>
+				<BlockInterface>Compare</BlockInterface>
+				<ParameterReference Name="Comparison"/>
+				<ParameterReference Name="Threshold"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="Timer Value"/>
+			</Block>
+			<Block>
+				<Mode>ChangeOFDLTimer1</Mode>
+				<Reference Type="VILib" Name="ChangeOFDLTimer1.vix"/>
+				<BlockInterface>Change</BlockInterface>
+				<ParameterReference Name="Amount"/>
+				<ParameterReference Name="Timer Value"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="i"/>
+			</Block>
+			<Block>
+				<Mode>ChangeOFDLTimer2</Mode>
+				<Reference Type="VILib" Name="ChangeOFDLTimer2.vix"/>
+				<BlockInterface>Change</BlockInterface>
+				<ParameterReference Name="Amount"/>
+				<ParameterReference Name="Timer Value"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="i"/>
+			</Block>
+			<Block>
+				<Mode>ChangeOFDLTimer3</Mode>
+				<Reference Type="VILib" Name="ChangeOFDLTimer3.vix"/>
+				<BlockInterface>Change</BlockInterface>
+				<ParameterReference Name="Amount"/>
+				<ParameterReference Name="Timer Value"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="i"/>
+			</Block>
+			<Block>
+				<Mode>ChangeOFDLTimer4</Mode>
+				<Reference Type="VILib" Name="ChangeOFDLTimer4.vix"/>
+				<BlockInterface>Change</BlockInterface>
+				<ParameterReference Name="Amount"/>
+				<ParameterReference Name="Timer Value"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="i"/>
+			</Block>
+			<Block>
+				<Mode>ChangeOFDLTimer5</Mode>
+				<Reference Type="VILib" Name="ChangeOFDLTimer5.vix"/>
+				<BlockInterface>Change</BlockInterface>
+				<ParameterReference Name="Amount"/>
+				<ParameterReference Name="Timer Value"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="i"/>
+			</Block>
+			<Block>
+				<Mode>ChangeOFDLTimer6</Mode>
+				<Reference Type="VILib" Name="ChangeOFDLTimer6.vix"/>
+				<BlockInterface>Change</BlockInterface>
+				<ParameterReference Name="Amount"/>
+				<ParameterReference Name="Timer Value"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="i"/>
+			</Block>
+			<Block>
+				<Mode>ChangeOFDLTimer7</Mode>
+				<Reference Type="VILib" Name="ChangeOFDLTimer7.vix"/>
+				<BlockInterface>Change</BlockInterface>
+				<ParameterReference Name="Amount"/>
+				<ParameterReference Name="Timer Value"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="i"/>
+			</Block>
+			<Block>
+				<Mode>ChangeOFDLTimer8</Mode>
+				<Reference Type="VILib" Name="ChangeOFDLTimer8.vix"/>
+				<BlockInterface>Change</BlockInterface>
+				<ParameterReference Name="Amount"/>
+				<ParameterReference Name="Timer Value"/>
+				<ParameterReference Name="Result"/>
+				<ParameterReference Name="i"/>
+			</Block>
+			<Category Name="Reset">
+				<Block>
+					<Mode>ResetOFDLTimer1</Mode>
+					<Reference Type="VILib" Name="ResetOFDLTimer1.vix"/>
+				</Block>
+				<Block>
+					<Mode>ResetOFDLTimer2</Mode>
+					<Reference Type="VILib" Name="ResetOFDLTimer2.vix"/>
+				</Block>
+				<Block>
+					<Mode>ResetOFDLTimer3</Mode>
+					<Reference Type="VILib" Name="ResetOFDLTimer3.vix"/>
+				</Block>
+				<Block>
+					<Mode>ResetOFDLTimer4</Mode>
+					<Reference Type="VILib" Name="ResetOFDLTimer4.vix"/>
+				</Block>
+				<Block>
+					<Mode>ResetOFDLTimer5</Mode>
+					<Reference Type="VILib" Name="ResetOFDLTimer5.vix"/>
+				</Block>
+				<Block>
+					<Mode>ResetOFDLTimer6</Mode>
+					<Reference Type="VILib" Name="ResetOFDLTimer6.vix"/>
+				</Block>
+				<Block>
+					<Mode>ResetOFDLTimer7</Mode>
+					<Reference Type="VILib" Name="ResetOFDLTimer7.vix"/>
+				</Block>
+				<Block>
+					<Mode>ResetOFDLTimer8</Mode>
+					<Reference Type="VILib" Name="ResetOFDLTimer8.vix"/>
+				</Block>
+			</Category>
+		</PolyGroup>
+	</PolyGroups>
+</EditorDefinitions>

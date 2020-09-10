@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EditorStrings>
+	<PolyGroups ModuleName="OFDL Timer">
+		<PolyGroup Name="OFDL Timer" DisplayName="Timer - OFDL Dev.">
+			<Parameter Name="Timer Value" DisplayName="Timer Value"/>
+			<Parameter Name="Result" DisplayName="Result"/>
+			<Parameter Name="Amount" DisplayName="Amount"/>
+			<Parameter Name="Comparison" DisplayName="Compare Type"/>
+			<Parameter Name="Threshold" DisplayName="Threshold Value"/>
+			<Block Mode="MeasureOFDLTimer1" DisplayName="Timer 1"/>
+			<Block Mode="MeasureOFDLTimer2" DisplayName="Timer 2"/>
+			<Block Mode="MeasureOFDLTimer3" DisplayName="Timer 3"/>
+			<Block Mode="MeasureOFDLTimer4" DisplayName="Timer 4"/>
+			<Block Mode="MeasureOFDLTimer5" DisplayName="Timer 5"/>
+			<Block Mode="MeasureOFDLTimer6" DisplayName="Timer 6"/>
+			<Block Mode="MeasureOFDLTimer7" DisplayName="Timer 7"/>
+			<Block Mode="MeasureOFDLTimer8" DisplayName="Timer 8"/>
+			<Block Mode="CompareOFDLTimer1" DisplayName="Timer 1"/>
+			<Block Mode="CompareOFDLTimer2" DisplayName="Timer 2"/>
+			<Block Mode="CompareOFDLTimer3" DisplayName="Timer 3"/>
+			<Block Mode="CompareOFDLTimer4" DisplayName="Timer 4"/>
+			<Block Mode="CompareOFDLTimer5" DisplayName="Timer 5"/>
+			<Block Mode="CompareOFDLTimer6" DisplayName="Timer 6"/>
+			<Block Mode="CompareOFDLTimer7" DisplayName="Timer 7"/>
+			<Block Mode="CompareOFDLTimer8" DisplayName="Timer 8"/>
+			<Block Mode="ChangeOFDLTimer1" DisplayName="Timer 1"/>
+			<Block Mode="ChangeOFDLTimer2" DisplayName="Timer 2"/>
+			<Block Mode="ChangeOFDLTimer3" DisplayName="Timer 3"/>
+			<Block Mode="ChangeOFDLTimer4" DisplayName="Timer 4"/>
+			<Block Mode="ChangeOFDLTimer5" DisplayName="Timer 5"/>
+			<Block Mode="ChangeOFDLTimer6" DisplayName="Timer 6"/>
+			<Block Mode="ChangeOFDLTimer7" DisplayName="Timer 7"/>
+			<Block Mode="ChangeOFDLTimer8" DisplayName="Timer 8"/>
+			<Category Name="Reset" DisplayName="Reset">
+				<Block Mode="ResetOFDLTimer1" DisplayName="Timer 1"/>
+				<Block Mode="ResetOFDLTimer2" DisplayName="Timer 2"/>
+				<Block Mode="ResetOFDLTimer3" DisplayName="Timer 3"/>
+				<Block Mode="ResetOFDLTimer4" DisplayName="Timer 4"/>
+				<Block Mode="ResetOFDLTimer5" DisplayName="Timer 5"/>
+				<Block Mode="ResetOFDLTimer6" DisplayName="Timer 6"/>
+				<Block Mode="ResetOFDLTimer7" DisplayName="Timer 7"/>
+				<Block Mode="ResetOFDLTimer8" DisplayName="Timer 8"/>
+			</Category>
+		</PolyGroup>
+	</PolyGroups>
+</EditorStrings>

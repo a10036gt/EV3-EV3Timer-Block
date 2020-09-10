@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Version="1.0.2.10" xmlns="http://www.ni.com/SourceModel.xsd">
+    <Namespace Name="Project">
+        <VirtualInstrument IsTopLevel="false" IsReentrant="true" Version="1.0.2.0" xmlns="http://www.ni.com/VirtualInstrument.xsd">
+            <DataItem Name="First\ Operand" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="1" />
+            <DataItem Name="Second\ Operand" DataType="Single" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="2" />
+            <DataItem Name="Comparison" DataType="Int32" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Input" CallIndex="0" />
+            <DataItem Name="Result" DataType="Boolean" DefaultTerminalDirection="Output" CallUsage="Optional" CallDirection="Output" CallIndex="0" />
+            <FrontPanel>
+                <fpruntime:FrontPanelCanvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:fpruntime="clr-namespace:NationalInstruments.LabVIEW.FrontPanelRuntime;assembly=NationalInstruments.LabVIEW.FrontPanelRuntime" xmlns:Model="clr-namespace:NationalInstruments.SourceModel.Designer;assembly=NationalInstruments.SourceModel" x:Name="FrontPanel" Model:DesignerSurfaceProperties.CanSnapToObjects="True" Model:DesignerSurfaceProperties.SnapToObjects="True" Model:DesignerSurfaceProperties.ShowSnaplines="True" Model:DesignerSurfaceProperties.ShowControlAdorners="True" Width="640" Height="480" />
+            </FrontPanel>
+            <BlockDiagram Name="__RootDiagram__">
+                <CaseStructure Id="n46" Bounds="616 77 203 133" DataType="Int32" UserSelectorBounds="42.997 0 117.007 14" Selected="D23" Default="D23">
+                    <CaseStructure.Case Id="D46" Bounds="7 7 189 119" Pattern="2">
+                        <IsGreater Id="n49" Terminals="x\ \&gt;\ y\?=w8, y=w7, x=w6" TopLeft="77 42" />
+                        <Wire Id="w6" Joints="N(b53:D46) h(49) v(28) N(n49:x)" />
+                        <Wire Id="w7" Joints="N(b52:D46) h(49) v(-28) N(n49:y)" />
+                        <Wire Id="w8" Joints="N(n49:x\ \&gt;\ y\?) N(b49:D46)" />
+                    </CaseStructure.Case>
+                    <CaseStructure.Case Id="D22" Bounds="7 7 189 119" Pattern="3">
+                        <Wire Id="w7" Joints="N(b52:D22) h(49) v(-28) N(n23:y)" />
+                        <Wire Id="w8" Joints="N(n23:x\ \&gt;\=\ y\?) N(b49:D22)" />
+                        <IsGreaterOrEqual Id="n23" Terminals="x\ \&gt;\=\ y\?=w8, y=w7, x=w9" TopLeft="77 42" />
+                        <Wire Id="w9" Joints="N(b53:D22) h(49) v(28) N(n23:x)" />
+                    </CaseStructure.Case>
+                    <CaseStructure.Case Id="D49" Bounds="7 7 189 119" Pattern="1">
+                        <IsNotEqual Id="n23" Terminals="x\ \!\=\ y\?=w9, y=w8, x=w7" TopLeft="77 42" />
+                        <Wire Id="w7" Joints="N(b53:D49) h(49) v(28) N(n23:x)" />
+                        <Wire Id="w8" Joints="N(b52:D49) h(49) v(-28) N(n23:y)" />
+                        <Wire Id="w9" Joints="N(n23:x\ \!\=\ y\?) N(b49:D49)" />
+                    </CaseStructure.Case>
+                    <CaseStructure.Case Id="D23" Bounds="7 7 189 119" Pattern="0, Default">
+                        <IsEqual Id="n21" Terminals="x\ \=\ y\?=w8, y=w7, x=w6" TopLeft="77 42" />
+                        <Wire Id="w6" Joints="N(b53:D23) h(49) v(28) N(n21:x)" />
+                        <Wire Id="w7" Joints="N(b52:D23) h(49) v(-28) N(n21:y)" />
+                        <Wire Id="w8" Joints="N(n21:x\ \=\ y\?) N(b49:D23)" />
+                    </CaseStructure.Case>
+                    <CaseStructure.Case Id="D47" Bounds="7 7 189 119" Pattern="4">
+                        <IsLess Id="n49" Terminals="x\ \&lt;\ y\?=w8, y=w7, x=w5" TopLeft="77 42" />
+                        <Wire Id="w5" Joints="N(b53:D47) h(49) v(28) N(n49:x)" />
+                        <Wire Id="w7" Joints="N(b52:D47) h(49) v(-28) N(n49:y)" />
+                        <Wire Id="w8" Joints="N(n49:x\ \&lt;\ y\?) N(b49:D47)" />
+                    </CaseStructure.Case>
+                    <CaseStructure.Case Id="D21" Bounds="7 7 189 119" Pattern="5">
+                        <Wire Id="w5" Joints="N(b53:D21) h(49) v(28) N(n22:x)" />
+                        <Wire Id="w7" Joints="N(b52:D21) h(49) v(-28) N(n22:y)" />
+                        <Wire Id="w8" Joints="N(n22:x\ \&lt;\=\ y\?) N(b49:D21)" />
+                        <IsLessOrEqual Id="n22" Terminals="x\ \&lt;\=\ y\?=w8, y=w7, x=w5" TopLeft="77 42" />
+                    </CaseStructure.Case>
+                    <CaseStructure.Selector Id="b44" Terminals="n46=w48, D46, D47, D49, D21, D22, D23" TopLeft="0 56" />
+                    <CaseStructure.Tunnel Id="b49" Terminals="n46=w51, D46=w8, D49=w9, D47=w8, D21=w8, D22=w8, D23=w8" TopLeft="189 56" />
+                    <CaseStructure.Tunnel Id="b52" Terminals="n46=w52, D46=w7, D49=w8, D47=w7, D21=w7, D22=w7, D23=w7" TopLeft="0 91" />
+                    <CaseStructure.Tunnel Id="b53" Terminals="n46=w17, D46=w6, D49=w7, D47=w5, D21=w5, D22=w9, D23=w6" TopLeft="0 21" />
+                </CaseStructure>
+                <Wire Id="w48" Joints="N(n21:Numeric) N(b44:n46)" />
+                <Wire Id="w51" Joints="N(b49:n46) N(n22:Numeric)" />
+                <Wire Id="w52" Joints="N(n19:Numeric) N(b52:n46)" />
+                <Wire Id="w17" Joints="N(n20:Numeric) N(b53:n46)" />
+                <Comment Bounds="616 -42 203 91" SizeMode="User" AttachStyle="Free">
+                    <Content>0 ==
+1 !=
+2 &gt;
+3 &gt;=
+4 &lt;
+5 &lt;=</Content>
+                </Comment>
+                <DataAccessor DataItem="First Operand" Id="n20" Bounds="490 98 105 14">
+                    <Terminal Id="Numeric" Direction="Output" Wire="w17" Hotspot="1 0.5" Bounds="0 0 105 14" />
+                </DataAccessor>
+                <DataAccessor DataItem="Second Operand" Id="n19" Bounds="469 168 126 14">
+                    <Terminal Id="Numeric" Direction="Output" Wire="w52" Hotspot="1 0.5" Bounds="0 0 126 14" />
+                </DataAccessor>
+                <DataAccessor DataItem="Comparison" Id="n21" Bounds="497 133 98 14">
+                    <Terminal Id="Numeric" Direction="Output" Wire="w48" Hotspot="1 0.5" Bounds="0 0 98 14" />
+                </DataAccessor>
+                <DataAccessor DataItem="Result" Id="n22" Bounds="854 133 70 14">
+                    <Terminal Id="Numeric" Direction="Input" Wire="w51" Hotspot="0 0.5" Bounds="0 0 70 14" />
+                </DataAccessor>
+            </BlockDiagram>
+        </VirtualInstrument>
+    </Namespace>
+</SourceFile>
