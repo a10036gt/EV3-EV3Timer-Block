@@ -1,14 +1,12 @@
 # EV3-EV3Timer-Block
-![]()
+![](https://i2.wp.com/ofdl.tw/wp-content/uploads/2020/09/EV3TIMER_OFDL-1.jpg?w=592&ssl=1)
 
-You can download ev3b file to import this block：[Latest release]()
+You can download ev3b file to import this block：[Latest release](https://github.com/a10036gt/EV3-EV3Timer-Block/releases)
 
 What’s EV3-EV3Timer-Block？
 
-EV3 ToolBox Block, a enhanced version of EV3 Color sensor block, you can read the normalization of raw values from EV3 color sensor in reflect light mode, and you calibrate of each sensor individually.
+Just Give you more 8 timer to use (this timer block didn’t compatible with Lego’s).
 
-And our block has been optimized, the read speed is fast, can make your robot more stable.
+使用說明：https://ofdl.tw/ev3-hack/ev3-timer-advanced/
 
-使用說明：https://ofdl.tw/ev3-hack/adv-ev3-color-sensor-block/
-
-User Guide：https://ofdl.tw/en/ev3-hacking/adv-ev3-color-block/
+User Guide：https://ofdl.tw/en/ev3-hacking/ev3-timer-adv/
